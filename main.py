@@ -134,11 +134,11 @@ def play_match(real_madrid, barcelona, location):
     for i in range(90):
         if random.randint(0,100) in home_lucky_numbers:
             home_goals = home_goals + 1
-            print(f"{i} minutes,\n {player_scored(home_players)} \n {home_team["name"]} has scored a Goal, the result is {home_goals} x {away_goals}")
+            print(f"{i} minutes,\n {player_scored(home_players)} \n {home_team['name']} has scored a Goal, the result is {home_goals} x {away_goals}")
             time.sleep(2)
         elif random.randint(0,100)in away_lucky_numbers:
             away_goals = away_goals + 1
-            print(f"{i} minutes, \n {player_scored(away_players)} \n {away_team["name"]} has scored a Goal, the result is {home_goals} x {away_goals}")
+            print(f"{i} minutes, \n {player_scored(away_players)} \n {away_team['name']} has scored a Goal, the result is {home_goals} x {away_goals}")
             time.sleep(2)
     if home_goals > away_goals:
         winner = home_team["name"]
